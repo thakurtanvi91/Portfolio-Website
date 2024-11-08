@@ -1,0 +1,244 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body {
+    background: #102131;
+    font-family: Arial, sans-serif;
+    display: relative;
+    background-color: #494b60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;;
+
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #655953da;
+    color: #0c171a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.vertical-text {
+    transform: rotate(-90deg);
+    /* Rotates text to be vertical */
+    transform-origin: right top;
+    /* Adjusts rotation point */
+    white-space:nowrap;
+    /* Prevents line breaks in text */
+    
+    font-weight:bold;
+    font-size: -20px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.sidebar .profile img {
+    width: 250px;
+    height: 300px;
+    resize: vertical;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    
+}
+
+/* Main Content */
+.content {
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #ecf0f1;
+    margin-left: 350px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.section h4 {
+    font-size: 1.2rem;
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+.details h5 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item h5 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.education-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 350px;
+        background-color:hsl(14, 100%, 76%);
+        color:#3276ba;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+}
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    /* Creates space for the frame */
+    background-color: #fff;
+    /* Frame background color */
+    border: 2px solid #ccc;
+    /* Frame border */
+    border-radius: 8px;
+    /* Optional, for slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a classic look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.profile h2 {
+    font-size: 1.7rem;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    margin-bottom: 7px;
+}
+
+.profile p {
+    font-size: 1 rem;
+    margin-bottom: 10px;
+}
+
+.sidebar nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    color: #3ca2d1;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin: 5px;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.sidebar nav a:hover {
+    background-color: #2db89c;
+    color: #fff;
+}
+
+.sidebar-icons {
+    justify-content:left;
+    position:absolute;
+    right: 340px;
+    bottom: 5%;
+    display: inline-block;
+    flex-direction: column;
+    align-self: center;
+    padding: 2px;
+    height: 70%;
+    z-index: 1;
+    
+    
+}
+
+.sidebar-icons .icon {
+    margin: 2px 0;
+}
+
+.sidebar-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.sidebar-icons img:hover {
+    transform: scale(1.1);
+}
+
+.content p{
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:bisque;
+    color: #0c171a;
+    
+    margin-left: 0px;
+    margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align:justify;
+        z-index: 1;
+}
